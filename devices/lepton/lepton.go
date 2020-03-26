@@ -71,8 +71,8 @@ func New(p spi.Port, i i2c.Bus) (*Dev, error) {
 		return nil, err
 	}
 	// TODO(maruel): Support Lepton 3 with 160x120.
-	w := 80
-	h := 60
+	w := 160
+	h := 120
 	// telemetry data is a 3 lines header.
 	frameLines := h + 3
 	frameWidth := w*2 + 4
